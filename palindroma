@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+float palindrome(char A[])
+{
+    int a=0;
+    for(int i = 0; A[i] != '\0'; i++){
+        a++;
+	}
+    char C[a];
+    for(int i=0;A[i]!='\0';i++)
+    {
+        if(A[i]!=' ')
+        {
+            C[i]=A[i];
+        }
+    }
+    return a;
+}
+int main()
+{
+    char palin[] = "yo soy";
+    cout<<palindrome(palin);
+    return 0;
+}
